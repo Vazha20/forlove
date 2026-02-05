@@ -254,3 +254,14 @@
     stroke-dashoffset: 0;
   }
 }
+.textOnlyCard {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 16px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #fff;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}

@@ -29,20 +29,19 @@ export default function LovePage() {
   const [time, setTime] = useState<Time>(calculateTimeTogether());
 
   const photos = [
-    { src: "pirvelikvavili.jpeg", caption: "პირველი ყვავილი.დაბადების დღე თან ყვავილები არ მიყვარს თან თვალით არ მყავს ნანახი ადამიანი ისე ვუგზავნი 😄" },
+    { src: "pirvelikvavili.jpeg", caption: "პირველი ყვავილი.დაბადების დღე თან ყვავილები არ მიყვარს 😄" },
     { src: "firstdate.png", caption: "დღე, როცა დრო გაჩერდა ⏳ 05.11.2025 პირველი შეხვედრა" },
     { src: "pirveliphoto.jpeg", caption: "პირველი ფოტო.მოუმზადებელი იყო 🥰 სარკეც რას გავს 😄" },
     { src: "meorekvavili.jpeg", caption: "პირველ ყვავილებზე არ მქონდა იმის ბედნიერება რომ ფოტო გამოეგზავნა პირადად ჩემთვის აქ უკვე მეორე ყვავილებია და ურთიერთობაც ბევრად წინაა წასული" },
-    { src: "qolga.jpeg", caption: "პირველი მოულოდნელობა,ვურეკავ სად ხართქო ამ წამს ამოვედი სახლიო და მეთქი ჩამოიხედე აბა.ძაან ესიამოვნა მაგრამ სულ ცოტახნით ჩამოვიდა.თან გაწვიმდა და ქოლგა ჩამომიგდო,რომელიც ახლაც სახლში მაქვს 😄" },
-    { src: "mesamekvavili.jpeg", caption: "აქ წინა დღეს გავაბრაზე და კოჭლმა მოვუტანე ყვავილები.მანამდე თუ არაფერზე ბრაზდებოდა აქ უკვე დაწყებული ქონდა რაღცეებზე დარდი 😄" },
-    { src: "", caption: "22.09.2025 დღე როდესაც ჩვენს ურთიერთბაში მოხდა ყველაზე დიდი გარდატეხა,როცა მართვის მოწმობაზე ჩასაბარებლად წასულ ნინის ზუგდიდში დავადექი.მიზეზი?უბრალოდ რა შედეგითაც არ უნდა დასრულებულიყო ეგ გამოცდა იქ მინდოდა ვყოფილიყავი ვერ გავჩერდი სიცხიანი " }, 
+    { src: "qolga.jpeg", caption: "პირველი მოულოდნელობა, ვურეკავ სად ხართქო ამ წამს ამოვედი სახლიო და მეთქი ჩამოიხედე აბა 😄" },
+    { src: "mesamekvavili.jpeg", caption: "აქ წინა დღეს გავაბრაზე და კოჭლმა მოვუტანე ყვავილები. მანამდე თუ არაფერზე ბრაზდებოდა აქ უკვე დაწყებული ქონდა რაღაცეებზე დარდი 😄" },
+    { src: "", caption: "22.09.2025 დღე როდესაც ჩვენს ურთიერთბაში ალბათ ყველაზე დიდი გარდატეხა მოხდა,როცა მართვის მოწმობის გამოცდის ჩასაბარებლად წასულ ნინის ზუგდიდში დავადექი.მიზეზი?უბრალოდ რა შედეგითაც არ უნდა დასრულებულიყო ეგ გამოცდა იქ მინდოდა ვყოფილიყავი ვერ გავჩერდი სიცხიანი ვიყავი,მაგრამ პირობა მქონდა მიცემული რომ თვითონ როგორც უნდოდა ისე იქნებოდა ყველაფერი.უკან ერთად წამოვედით მაშინ ეზიარა ჩემს იუმორს სიღრმისეულად 😄 ყველაზე არაკომფორტული მგზავრობა თუ ასე ძალიან მესიამოვნებოდა არმეგონა და არ მინდოდა დასრულებულიყო პირველად ჩემს ცხოვრებაში 😄 ამ დღეს ფოტო არ გადაგვიღია სამწუხაროდ" }, 
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(calculateTimeTogether());
     }, 1000);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -56,7 +55,7 @@ export default function LovePage() {
         <h1 className={styles.title}>ჩემი სიყვარული ხარ</h1>
 
         <p className={styles.text}>
-          გვერდი რომელიც ჩვენი ემოციების საცავი იქნება 
+          გვერდი რომელიც ჩვენი ემოციების საცავი იქნება
         </p>
 
         {!open ? (
@@ -71,26 +70,23 @@ export default function LovePage() {
           <>
             {/* TIMER */}
             <section className={styles.timer}>
-    <div className={styles.ecgContainer}>
-  <svg
-    viewBox="0 0 100 20"
-    className={styles.ecgLine}
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <polyline
-      className={styles.ecgPolyline}
-      points="0,10 10,10 12,5 15,15 20,10 30,10 32,5 35,15 40,10 50,10 52,5 55,15 60,10 70,10 72,5 75,15 80,10 90,10 92,5 95,15 100,10"
-      fill="none"
-      stroke="red"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-
-</div>
-
-
+              <div className={styles.ecgContainer}>
+                <svg
+                  viewBox="0 0 100 20"
+                  className={styles.ecgLine}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    className={styles.ecgPolyline}
+                    points="0,10 10,10 12,5 15,15 20,10 30,10 32,5 35,15 40,10 50,10 52,5 55,15 60,10 70,10 72,5 75,15 80,10 90,10 92,5 95,15 100,10"
+                    fill="none"
+                    stroke="red"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
 
               <div className={styles.timerGrid}>
                 <TimeBox label="დღე" value={time.days} />
@@ -104,8 +100,7 @@ export default function LovePage() {
 
             {/* MESSAGE */}
             <section className={styles.message}>
-      
-        
+              მიყვარხარ უფრო ღრმად, ვიდრე სიტყვები აღწერს 🌹
               <div className={styles.heart}>💗</div>
             </section>
 
@@ -114,18 +109,26 @@ export default function LovePage() {
               <h2 className={styles.photosTitle}>ჩვენი მომენტები 📸</h2>
 
               <div className={styles.photosGrid}>
-                {photos.map((photo) => (
-                  <figure key={photo.src} className={styles.photoCard}>
-                    <img
-                      src={`/photos/${photo.src}`}
-                      alt={photo.caption}
-                      loading="lazy"
-                    />
-                    <div className={styles.photoOverlay}>
-                      <figcaption className={styles.photoCaption}>
+                {photos.map((photo, index) => (
+                  <figure key={index} className={styles.photoCard}>
+                    {photo.src ? (
+                      <>
+                        <img
+                          src={`/photos/${photo.src}`}
+                          alt={photo.caption}
+                          loading="lazy"
+                        />
+                        <div className={styles.photoOverlay}>
+                          <figcaption className={styles.photoCaption}>
+                            {photo.caption}
+                          </figcaption>
+                        </div>
+                      </>
+                    ) : (
+                      <div className={styles.textOnlyCard}>
                         {photo.caption}
-                      </figcaption>
-                    </div>
+                      </div>
+                    )}
                   </figure>
                 ))}
               </div>
