@@ -68,7 +68,26 @@ export default function LovePage() {
           <>
             {/* TIMER */}
             <section className={styles.timer}>
-              <h2 className={styles.timerTitle}>⏳ არ უნდა გაჩერდეს</h2>
+    <div className={styles.ecgContainer}>
+  <svg
+    viewBox="0 0 100 20"
+    className={styles.ecgLine}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <polyline
+      className={styles.ecgPolyline}
+      points="0,10 10,10 12,5 15,15 20,10 30,10 32,5 35,15 40,10 50,10 52,5 55,15 60,10 70,10 72,5 75,15 80,10 90,10 92,5 95,15 100,10"
+      fill="none"
+      stroke="red"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+
+</div>
+
+
 
               <div className={styles.timerGrid}>
                 <TimeBox label="დღე" value={time.days} />

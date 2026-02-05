@@ -219,3 +219,38 @@
   .photoOverlay { opacity: 1; }
   .timerGrid { grid-template-columns: repeat(2, 1fr); }
 }
+.ecgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.ecgLine {
+  width: 120px;
+  height: 24px;
+  overflow: visible;
+}
+
+.ecgPolyline {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: ecg 2s linear infinite;
+}
+
+.ecgText {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* ECG line animation */
+@keyframes ecg {
+  0% {
+    stroke-dashoffset: 200;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
