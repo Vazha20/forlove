@@ -26,6 +26,7 @@ function calculateTimeTogether(): Time {
 
 export default function LovePage() {
   const [open, setOpen] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
   const [time, setTime] = useState<Time>(calculateTimeTogether());
 
   const photos = [
@@ -119,6 +120,26 @@ export default function LovePage() {
               მიყვარხარ ყველაზე და ყველაფერზე მეტად
               <div className={styles.heart}>💗</div>
             </section>
+
+          <button
+  className={styles.playButton}
+  onClick={() => setShowVideo(true)}
+>
+  ▶️ ჩართე მუსიკა
+</button>
+{showVideo && (
+  <div className={styles.videoWrapper}>
+    <iframe
+      width="100%"
+      height="200"
+      src="https://www.youtube.com/embed/adgCj3a_n9E?autoplay=1"
+      title="YouTube video player"
+      allow="autoplay; encrypted-media"
+      allowFullScreen
+    ></iframe>
+  </div>
+)}
+
 
             {/* PHOTOS */}
             <section className={styles.photosSection}>

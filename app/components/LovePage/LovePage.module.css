@@ -265,3 +265,21 @@
   text-align: left;
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
+.playButton {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #ff8fab, #ff5d8f);
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.playButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+}
