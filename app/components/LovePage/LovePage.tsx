@@ -29,8 +29,9 @@ export default function LovePage() {
   const [time, setTime] = useState<Time>(calculateTimeTogether());
 
   const photos = [
+    { src: "pirvelikvavili.jpeg", caption: "პირველი ყვავილი.დაბადების დღე თან ყვავილები არ მიყვარს თან თვალით არ მყავს ნანახი ადამიანი ისე ვუგზავნი 😄" },
     { src: "firstdate.png", caption: "დღე, როცა დრო გაჩერდა ⏳ 05.11.2025 პირველი შეხვედრა" },
-    { src: "pirveliphoto.jpeg", caption: "პირველი ფოტო" },
+    { src: "pirveliphoto.jpeg", caption: "პირველი ფოტო.მოუმზადებელი იყო 🥰 სარკეც რას გავს 😄" },
     { src: "3.jpg", caption: "უბრალოდ ჩვენ, უბრალოდ ბედნიერები ✨" },
     { src: "4.jpg", caption: "მოგონება, რომელიც ყოველთვის გულშია ❤️" },
   ];
