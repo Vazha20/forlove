@@ -47,8 +47,8 @@ export default function LovePage() {
     <main className={styles.container}>
       <section className={styles.card}>
         {/* floating hearts */}
-        <span className={styles.floatingHeart1}>💖</span>
-        <span className={styles.floatingHeart2}>❤️</span>
+        <span className={styles.floatingHeart1}>💕</span>
+        <span className={styles.floatingHeart2}>💕</span>
 
         <h1 className={styles.title}>ჩემი სიყვარული ხარ</h1>
 
@@ -82,7 +82,7 @@ export default function LovePage() {
 
             {/* MESSAGE */}
             <section className={styles.message}>
-              მიყვარხარ ისე როგორც არასდროს არვის არ ყვარებია არვინ! 🌹  
+      
         
               <div className={styles.heart}>💗</div>
             </section>
