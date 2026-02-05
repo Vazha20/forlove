@@ -29,8 +29,8 @@ export default function LovePage() {
   const [time, setTime] = useState<Time>(calculateTimeTogether());
 
   const photos = [
-    { src: "firstdate.png", caption: "დღე, როცა დრო გაჩერდა ⏳ 05.11.2025" },
-    { src: "2.jpg", caption: "დღე, როცა დრო გაჩერდა ⏳" },
+    { src: "firstdate.png", caption: "დღე, როცა დრო გაჩერდა ⏳ 05.11.2025 პირველი შეხვედრა" },
+    { src: "pirveliphoto.jpeg", caption: "პირველი ფოტო" },
     { src: "3.jpg", caption: "უბრალოდ ჩვენ, უბრალოდ ბედნიერები ✨" },
     { src: "4.jpg", caption: "მოგონება, რომელიც ყოველთვის გულშია ❤️" },
   ];
