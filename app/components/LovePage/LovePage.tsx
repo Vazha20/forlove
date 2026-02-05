@@ -125,7 +125,7 @@ export default function LovePage() {
   className={styles.playButton}
   onClick={() => setShowVideo(true)}
 >
-  ▶️ ჩართე მუსიკა
+  ▶️  ჯერ ჩართე
 </button>
 {showVideo && (
   <div className={styles.videoWrapper}>
